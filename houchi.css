@@ -247,13 +247,13 @@
 }
 
 /*--------------------------------------
-送信ボタン
+ボタン
 ---------------------------------------*/
 .msr_sendbtn_05{
   margin:0 0 10px;
 }
 
-.msr_sendbtn_05 input[type=submit] {
+.msr_sendbtn_05 input[type=button] {
   background-color: #FFFFFF;
   border:1px solid #999999;
   border-radius: 2px;
@@ -270,15 +270,15 @@
   -webkit-transition: 0.2s ease-in-out;
   width: 180px;
 }
-.msr_sendbtn_05 input[type=submit]:hover {
+.msr_sendbtn_05 input[type=button]:hover {
   background-color: #999999;
   color: #FFFFFF;
 }
-.msr_sendbtn_05 input[disabled=disabled] {
+.msr_sendbtn_05 input[disabled=button] {
   cursor:default;
   opacity: 0.5;
 }
-.msr_sendbtn_05 input[disabled=disabled]:hover {
+.msr_sendbtn_05 input[disabled=button]:hover {
   background-color: #FFFFFF;
   color: #333333;
 }

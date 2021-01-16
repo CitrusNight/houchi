@@ -11,16 +11,17 @@ function calc_sum(){
   
   var result1 = num1 / num2 * num3;
 
-  var timeM = Math.floor(result1 % (24 * 60 * 60) % (60 * 60) / 60);
-  var timeS = result1 % (24 * 60 * 60) % (60 * 60) % 60;
+  var timeM = Math.round(Math.floor(result1 % (24 * 60 * 60) % (60 * 60) / 60));
+  var timeS = Math.round(result1 % (24 * 60 * 60) % (60 * 60) % 60);
     
   
-  // 分変換
-  document.frm1['result1'].value = timeM + '分' +timeS + '秒';
-  
-  // 秒変換
-  document.frm1['result2'].value = result1 + '秒';
-
+  if(num1 != '' && num2 != '' && num3 != ''){
+	  // 分変換
+	  document.frm1['result1'].value = timeM + '分' +timeS + '秒';
+	  
+	  // 秒変換
+	  document.frm1['result2'].value = timeS + '秒';
+}
   return false;
 }
 function reset_exe(){
