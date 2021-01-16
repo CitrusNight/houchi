@@ -22,6 +22,9 @@ function calc_sum(){
 	  
 	  // 秒変換
 	  document.frm1['result2'].value = result2 + '秒';
+} else {
+	  document.frm1['result1'].value = "";
+	  document.frm1['result2'].value = "";
 }
   return false;
 }
