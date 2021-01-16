@@ -30,6 +30,4 @@ function calc_sum(){
 }
 function reset_exe(){
     document.frm1['num1'].value = "";
-    document.frm1['num2'].value = "";
-    document.frm1['num3'].value = "1";
 }
