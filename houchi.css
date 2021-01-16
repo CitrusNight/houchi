@@ -8,6 +8,8 @@
 }
 .msr_text_05 label {
   display: block;
+  color: #99FFFF;
+  font-weight:  bold;
   font-size: 14px;
   padding-bottom: 5px;
 }
@@ -287,4 +289,6 @@
 body {
   background-image: url("rakushin.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
