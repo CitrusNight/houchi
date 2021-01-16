@@ -280,3 +280,11 @@
   background-color: #FFFFFF;
   color: #333333;
 }
+
+/*--------------------------------------
+背景
+---------------------------------------*/
+body {
+  background-image: url("rakushin.png");
+  background-size: cover;
+}
