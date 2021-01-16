@@ -1,7 +1,39 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta content="text/html charset=shift_jis" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width">
+    <title>防衛時間計算</title>
+    <link rel="stylesheet" href="sample.css">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<link rel="stylesheet" href="./houchi.css">
+<script type="text/javascript" src="./houchi.js" charset="shift_jis"></script>
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<form name="frm1" action="dummy" class="exp01">
+  <div class="msr_text_05">
+    <label>球数</label>
+    <input size="4" type="text" name="num1">
+    <label>最低駐屯数</label>
+    <input size="1" type="text" name="num2">
+  </div>
+  
+<input type="button" value="計算" onclick="calc_sum();">
+<input type="button" value="リセット" onclick="return reset_exe();"><br/><br/>
+
+
+<!--分表示 -->
+<label>守れる時間</label><br/>
+<label>分表示</label>
+<input size="6" type="text" name="result1" readonly>
+
+<!--秒表示-->
+<label>秒表示</label>
+<input size="6" type="text" name="result2" readonly>
+
+
+</form>
 </body>
 </html>
