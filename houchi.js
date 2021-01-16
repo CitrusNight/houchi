@@ -11,14 +11,14 @@ function calc_sum(){
   
   var result1 = num1 / num2 * num3;
 
-  var timeM = Math.round(Math.floor(result1 % (24 * 60 * 60) % (60 * 60) / 60));
-  var timeS = Math.round(result1 % (24 * 60 * 60) % (60 * 60) % 60);
+  var min = Math.round(Math.floor(result1 / 60));
+  var sec = Math.round(result1 % 60);
   
   var result2 = Math.round(result1);
   
   if(num1 != '' && num2 != '' && num3 != ''){
 	  // 分変換
-	  document.frm1['result1'].value = timeM + '分' +timeS + '秒';
+	  document.frm1['result1'].value = min + '分' + sec + '秒';
 	  
 	  // 秒変換
 	  document.frm1['result2'].value = result2 + '秒';
