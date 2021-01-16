@@ -1,29 +1,30 @@
 
 function calc_sum(){
-  // ‹…”
+  // çƒæ•°
   var num1 = document.frm1['num1'].value;
   
-  // Å’á’““Ô”
+  // æœ€ä½é§å±¯æ•°
   var num2 = document.frm1['num2'].value;
-
-  var result1 = num1 / num2 ;
+  
+  // ä¿‚æ•°
+  var num3 = document.frm1['num3'].value;
+  
+  var result1 = num1 / num2 * num3;
 
   var timeM = Math.floor(result1 % (24 * 60 * 60) % (60 * 60) / 60);
   var timeS = result1 % (24 * 60 * 60) % (60 * 60) % 60;
     
   
-  // •ª•ÏŠ·
-  document.frm1['result1'].value = timeM + '•ª' +timeS + '•b';
+  // åˆ†å¤‰æ›
+  document.frm1['result1'].value = timeM + 'åˆ†' +timeS + 'ç§’';
   
-  // •b•ÏŠ·
-  document.frm1['result2'].value = result1 + '•b';
+  // ç§’å¤‰æ›
+  document.frm1['result2'].value = result1 + 'ç§’';
 
   return false;
 }
 function reset_exe(){
-  sum1 = "";
-  if (confirm('ƒŠƒZƒbƒg‚µ‚Ü‚·B')){
     document.frm1['num1'].value = "";
     document.frm1['num2'].value = "";
-  }
+    document.frm1['num3'].value = "1";
 }

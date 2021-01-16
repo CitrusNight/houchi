@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta content="text/html charset=shift_jis" http-equiv="Content-Type">
-    <meta name="viewport" content="width=device-width">
-    <title>–h‰qŽžŠÔŒvŽZ</title>
-    <link rel="stylesheet" href="sample.css">
-<meta http-equiv="Content-Style-Type" content="text/css">
-<meta http-equiv="Content-Script-Type" content="text/javascript">
-<link rel="stylesheet" href="./houchi.css">
-<script type="text/javascript" src="./houchi.js" charset="shift_jis"></script>
+<title>é˜²è¡›æ™‚é–“è¨ˆç®—</title>
+    <meta content="text/html charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <script type="text/javascript" src="./houchi.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./houchi.css">
 </head>
 
 <body>
 <form name="frm1" action="dummy" class="exp01">
   <div class="msr_text_05">
-    <label>‹…”</label>
+    <label>çƒæ•°</label>
     <input size="4" type="text" name="num1">
-    <label>Å’á’““Ô”</label>
+    <label>æœ€ä½Žé§å±¯æ•°</label>
     <input size="1" type="text" name="num2">
+    <label>ä¿‚æ•°</label>
+    <input size="4" type="text" name="num3" value="1">
   </div>
-  
-<input type="button" value="ŒvŽZ" onclick="calc_sum();">
-<input type="button" value="ƒŠƒZƒbƒg" onclick="return reset_exe();"><br/><br/>
 
+<div class= "msr_sendbtn_05">
+<input type="button" value="è¨ˆç®—" onclick="calc_sum();">
+<input type="button" value="ãƒªã‚»ãƒƒãƒˆ" onclick="return reset_exe();"><br/><br/>
+</div>
 
-<!--•ª•\Ž¦ -->
-<label>Žç‚ê‚éŽžŠÔ</label><br/>
-<label>•ª•\Ž¦</label>
+<!--åˆ†è¡¨ç¤º -->
+<label>å®ˆã‚Œã‚‹æ™‚é–“</label><br/>
+<label>åˆ†è¡¨ç¤º</label>
 <input size="6" type="text" name="result1" readonly>
 
-<!--•b•\Ž¦-->
-<label>•b•\Ž¦</label>
+<!--ç§’è¡¨ç¤º-->
+<label>ç§’è¡¨ç¤º</label>
 <input size="6" type="text" name="result2" readonly>
 
 
