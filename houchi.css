@@ -169,6 +169,7 @@
   width: 230px;
 }
 .msr_pulldown_05 label{
+  color: #99FFFF;
   position:relative;
 }
 .msr_pulldown_05 label::after {
