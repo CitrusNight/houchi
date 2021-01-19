@@ -172,19 +172,7 @@
   color: #99FFFF;
   position:relative;
 }
-.msr_pulldown_05 label::after {
-  content:"";
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #333333;
-  right: 16px;
-  height: 8px;
-  margin-top: -5px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  position:absolute;
-  top:50%;
-  width: 8px;
-}
+
 
 /*--------------------------------------
 ファイル選択
@@ -291,5 +279,5 @@ body {
   background-image: url("rakushin.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;  
 }
