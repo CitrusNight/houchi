@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>防衛時間計算</title>
+    <meta content="text/html charset=utf-8" http-equiv="Content-Type">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script type="text/javascript" src="./houchi.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./houchi.css">
+</head>
+
+<body>
+<form name="frm1" action="dummy" class="exp01">
+  <div class="msr_text_05">
+    <label>おにぎり数</label>
+    <input size="4" type="text" name="num1">
+  </div>
+  <div class="msr_pulldown_05">
+    <label>最低駐屯数</label>
+    <select name="num2">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    </select>
+    <label>係数</label>
+    <select name="num3">
+    <option value="1.0">1.0</option>
+    <option value="1.5">1.5</option>
+    <option value="2.0">2.0</option>
+    </select>
+  </div>
+
+<div class= "msr_sendbtn_05">
+<input type="button" value="計算" onclick="calc_sum();"><br/>
+<input type="button" value="おにぎリセット" onclick="return reset_exe();">
+</div>
+
+<!--分表示 -->
+<div class="msr_text_05">
+<label>守れる時間</label>
+<label>分表示</label>
+<input size="6" type="text" name="result1" readonly>
+
+<!--秒表示-->
+<label>秒表示</label>
+<input size="6" type="text" name="result2" readonly>
+</div>
+
+</form>
+</body>
+</html>
