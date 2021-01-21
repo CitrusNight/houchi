@@ -4,16 +4,37 @@
 
 .msr_text_05 {
   padding-bottom: 20px;
-  width: 150px;
+  width: 1500px;
 }
 .msr_text_05 label {
   display: block;
   color: #99FFFF;
   font-weight:  bold;
   font-size: 14px;
-  padding-bottom: 5px;
 }
 .msr_text_05 input[type=text] {
+  background: #fff;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 14px;
+  padding: 10px;
+  height: 40px;
+  width: 150px;
+}
+
+.msr_text_06 {
+  padding-bottom: 20px;
+  width: 1500px;
+}
+.msr_text_06 label {
+  display: block;
+  color: #FFB000;
+  font-weight:  bold;
+  font-size: 14px;
+}
+.msr_text_06 input[type=text] {
   background: #fff;
   border: 1px solid #999999;
   box-sizing: border-box;
@@ -48,6 +69,8 @@
   margin-right: 12px;
   padding: 0 0 0px 24px;
   position: relative;
+  color: #99FFFF;
+  font-weight:  bold;
 }
 .msr_radio_05 input[type=radio] + label::before {
   border: 1px solid #777777;
@@ -169,8 +192,10 @@
   width: 230px;
 }
 .msr_pulldown_05 label{
+  font-size: 14px;
   color: #99FFFF;
   position:relative;
+  font-weight:  bold;
 }
 
 
