@@ -23,7 +23,7 @@ var app = new Vue({
                         document.frm1['num3'].value = 2;
                     }
                     calc_sum();
-                    calc_onigiri();
+                    
             	}
           });
 function calc_sum(){
