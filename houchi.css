@@ -10,7 +10,7 @@
   display: block;
   color: #99FFFF;
   font-weight:  bold;
-  font-size: 14px;
+  font-size: 12px;
 }
 .msr_text_05 input[type=text] {
   background: #fff;
@@ -18,7 +18,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-size: 14px;
+  font-size: 12px;
   padding: 10px;
   height: 40px;
   width: 100px;
@@ -32,7 +32,7 @@
   display: block;
   color: #FFB000;
   font-weight:  bold;
-  font-size: 14px;
+  font-size: 12px;
 }
 .msr_text_06 input[type=text] {
   background: #fff;
@@ -40,7 +40,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-size: 14px;
+  font-size: 12px;
   padding: 10px;
   height: 40px;
   width: 150px;
@@ -50,7 +50,7 @@
 .msr_text_07 label {
   color: #FFB000;
   font-weight:  bold;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /*--------------------------------------
@@ -61,7 +61,7 @@
   padding-bottom: 20px;
 }
 .msr_radio_05 p {
-  font-size: 14px;
+  font-size: 12px;
   padding-bottom: 5px;
 }
 .msr_radio_05 input[type=radio] {
@@ -71,7 +71,7 @@
 .msr_radio_05 input[type=radio] + label {
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5px;
   margin-right: 12px;
   padding: 0 0 0px 24px;
@@ -118,7 +118,7 @@
   padding-bottom: 20px;
 }
 .msr_chack_05 p {
-  font-size: 14px;
+  font-size: 12px;
   padding-bottom: 5px;
 }
 .msr_chack_05 input[type=checkbox] {
@@ -128,7 +128,7 @@
 .msr_chack_05 input[type=checkbox] + label {
   cursor: pointer;
   display: inline-block;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5px;
   margin-right: 12px;
   padding: 0 0 0 24px;
@@ -178,7 +178,7 @@
   width: 100px;
 }
 .msr_pulldown_05 p {
-  font-size: 14px;
+  font-size: 12px;
   padding-bottom: 5px;
 }
 .msr_pulldown_05 select {
@@ -199,7 +199,7 @@
   width: 100px;
 }
 .msr_pulldown_05 label{
-  font-size: 14px;
+  font-size: 12px;
   color: #99FFFF;
   position:relative;
   font-weight:  bold;
@@ -222,7 +222,7 @@
   -webkit-box-sizing: border-box;
   cursor: pointer;
   display:block;
-  font-size:14px;
+  font-size:12px;
   padding: 10px;
   position:relative;
   height: 40px;
@@ -231,7 +231,7 @@
 .msr_file_05 label::before {
   content:"＋";
   color:#333333;
-  font-size:20px;
+  font-size:12px;
   line-height:1;
   margin-top: -9px;
   right:10px;
@@ -253,7 +253,7 @@
 }
 .msr_textarea_05 label {
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   padding-bottom: 5px;
 }
 .msr_textarea_05 textarea {
@@ -261,7 +261,7 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  font-size: 13px;
+  font-size: 12px;
   padding: 10px;
   height: 210px;
   width: 460px;
@@ -281,7 +281,7 @@
   color: #333333;
   cursor:pointer;
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   padding: 14px;
   text-align: center;
   text-decoration: none;
@@ -311,5 +311,6 @@ body {
   background-image: url("oichi.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;  
+  background-attachment: fixed;
+  box-sizing : border-box;
 }
