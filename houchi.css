@@ -3,7 +3,7 @@
 ---------------------------------------*/
 
 .msr_text_05 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   width: 1500px;
 }
 .msr_text_05 label {
@@ -25,7 +25,7 @@
 }
 
 .msr_text_06 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   width: 1500px;
 }
 .msr_text_06 label {
@@ -58,7 +58,7 @@
 ---------------------------------------*/
 
 .msr_radio_05 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .msr_radio_05 p {
   font-size: 12px;
@@ -173,7 +173,7 @@
 ---------------------------------------*/
 
 .msr_pulldown_05 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   position: relative;
   width: 100px;
 }
