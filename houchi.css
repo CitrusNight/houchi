@@ -43,7 +43,7 @@
   font-size: 12px;
   padding: 10px;
   height: 40px;
-  width: 150px;
+  width: 100px;
 }
 
 
@@ -289,7 +289,7 @@
   -o-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
-  width: 180px;
+  width: 100px;
 }
 .msr_sendbtn_05 input[type=button]:hover {
   background-color: #999999;
