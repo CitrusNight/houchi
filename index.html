@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Style-Type" content="text/css">
     <meta http-equiv="Content-Script-Type" content="text/javascript">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=320,height=480,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="./houchi.css">
 </head>
@@ -14,17 +15,21 @@
 <form name="frm1" action="dummy" class="exp01">
 <div id ="app">
 <div class="msr_text_05">
-<label>■守りたい城を選択してください！</label>
+<label>■Step1.守りたい城を選択してください。</label>
 </div>
+
 <div class="msr_radio_05">
+<label><b><font color="#FFB000";size="14px"> 傾国：</font></b></label>
 <input type="radio" name="shiro" id="kei1" checked="checked" value="1" v-model="shiro"> 
-<label for="kei1"><font color="red">傾国赤城</font></label>
+<label for="kei1"><font color="red">赤城</font></label>
 <input type="radio" name="shiro" id="kei2" value="2" v-model="shiro"> 
-<label for="kei2">傾国青城</label>
+<label for="kei2">青城</label>
+<br/>
+<label><b><font color="#FFB000";size="14px"> 群雄：</font></b></label>
 <input type="radio" name="shiro" id="gun1" value="3" v-model="shiro"> 
-<label for="gun1"><font color="red">群雄赤城</font></label>
+<label for="gun1"><font color="red">赤城</font></label>
 <input type="radio" name="shiro" id="gun2" value="4" v-model="shiro"> 
-<label for="gun2" >群雄青城</font></label>
+<label for="gun2" >青城</font></label>
 </div>
 
   <div class="msr_pulldown_05">
@@ -43,45 +48,46 @@
   </div>
   
 <div class="msr_text_05">
-<label>■おにぎりの数を入力してください！</label>
+<label>■Step2-1.おにぎりの数を入力してください。</label>
 </div>
   <div class="msr_text_05">
     <label>おにぎり数</label>
-    <input size="4" type="text" name="num1">
+    <input maxlength="4" type="text" name="num1">
   </div>
-
-
-<div class= "msr_sendbtn_05">
-<input type="button" value="守備時間計算" onclick="calc_sum();"><br/>
-<input type="button" value="おにぎりリセット" onclick="return reset_exe();">
-</div>
-
-<!--分表示 -->
-<div class="msr_text_05">
-<label><守れる時間></label>
-<label>分表示</label>
-<input size="6" type="text" name="result1" readonly>
-
-<!--秒表示-->
-<label>秒表示</label>
-<input size="6" type="text" name="result2" readonly>
-</div>
-
-
-
+  
 <div class="msr_text_06">
-<label><時間から必要おにぎり数 逆算></label>
-<label>駐屯数、係数は上部のものを使用</label>
+<label>■Step2-2.残り時間を入力してください。</label>
 <label>入力例10分15秒→1015</label>
 <input maxlength="4" type="text" name="time1">
 </div>
 
+<!--
 <div class= "msr_sendbtn_05">
-<input type="button" value="おにぎり計算" onclick="calc_onigiri();">
+<input type="button" value="守備時間計算" onclick="calc_sum();"><br/>
+<input type="button" value="おにぎりリセット" onclick="return reset_exe();">
+</div>
+-->
+
+<div class= "msr_sendbtn_05">
+<input type="button" value="計算" onclick="calc_sum()">
 </div>
 
+<!--分表示 -->
+<div class="msr_text_05">
+<label>■Step3-1.守れる時間</label>
+<label>分表示</label>
+<input size="6" type="text" name="result1" readonly>
+</div>
+
+<!--秒表示-->
+<!--
+<label>秒表示</label>
+<input size="6" type="text" name="result2" readonly>
+</div>
+-->
+
 <div class="msr_text_06">
-<label><必要おにぎり数></label>
+<label>■Step3-2.必要おにぎり数</label>
 <input size="6" type="text" name="onigiriCNT" readonly>
 </div>
 
@@ -89,5 +95,6 @@
 </form>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script type="text/javascript" src="./houchi.js" charset="utf-8"></script>
+
 </body>
 </html>

@@ -41,33 +41,51 @@ function calc_sum(){
   var min = Math.round(Math.floor(result1 / 60));
   var sec = Math.round(result1 % 60);
   
-  var result2 = Math.round(result1);
+  // var result2 = Math.round(result1);
   
   if(num1 != '' && num2 != '' && num3 != ''){
 	  // 分変換
 	  document.frm1['result1'].value = min + '分' + sec + '秒';
 	  
 	  // 秒変換
-	  document.frm1['result2'].value = result2 + '秒';
+	  // document.frm1['result2'].value = result2 + '秒';
 } else {
 	  document.frm1['result1'].value = "";
-	  document.frm1['result2'].value = "";
+	  // document.frm1['result2'].value = "";
 }
+
+
+//必要おにぎり計算
+  // 時間
+  var min2 = parseInt(document.frm1['time1'].value.substr(0,2),10);
+  var sec2 = parseInt(document.frm1['time1'].value.substr(2,2),10);
+  // 駐屯数
+  var num2 = document.frm1['num2'].value;
+  // 係数
+  var num3 = document.frm1['num3'].value;
+  
+  if(min2 && sec2){
+	  if(min2+sec2 != 0 && num2 != '' && num3 != ''){
+ 		 document.frm1['onigiriCNT'].value = Math.round(((min2*60)+sec) * num2 / num3) ;
+		} else {
+			document.frm1['onigiriCNT'].value = "";
+		}
+	}
 
   return false;
 }
 
 function calc_onigiri(){
   // 時間
-  var min = parseInt(document.frm1['time1'].value.substr(0,2),10);
-  var sec = parseInt(document.frm1['time1'].value.substr(2,2),10);
+  var min2 = parseInt(document.frm1['time1'].value.substr(0,2),10);
+  var sec2 = parseInt(document.frm1['time1'].value.substr(2,2),10);
   // 駐屯数
   var num2 = document.frm1['num2'].value;
   // 係数
   var num3 = document.frm1['num3'].value;
   
-  if( min+sec != 0 && num2 != '' && num3 != ''){
- 	 document.frm1['onigiriCNT'].value = Math.round(((min*60)+sec) * num2 / num3) ;
+  if(min2+sec2 != 0 && num2 != '' && num3 != ''){
+ 	 document.frm1['onigiriCNT'].value = Math.round(((min2*60)+sec) * num2 / num3) ;
 	} else {
 	document.frm1['onigiriCNT'].value = "";}
 }

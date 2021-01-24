@@ -21,7 +21,7 @@
   font-size: 14px;
   padding: 10px;
   height: 40px;
-  width: 150px;
+  width: 100px;
 }
 
 .msr_text_06 {
@@ -44,6 +44,13 @@
   padding: 10px;
   height: 40px;
   width: 150px;
+}
+
+
+.msr_text_07 label {
+  color: #FFB000;
+  font-weight:  bold;
+  font-size: 14px;
 }
 
 /*--------------------------------------
@@ -168,7 +175,7 @@
 .msr_pulldown_05 {
   padding-bottom: 20px;
   position: relative;
-  width: 230px;
+  width: 100px;
 }
 .msr_pulldown_05 p {
   font-size: 14px;
@@ -189,7 +196,7 @@
   padding: 10px;
   position:relative;
   height: 40px;
-  width: 230px;
+  width: 100px;
 }
 .msr_pulldown_05 label{
   font-size: 14px;
@@ -301,7 +308,7 @@
 背景
 ---------------------------------------*/
 body {
-  background-image: url("rakushin.png");
+  background-image: url("oichi.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;  
