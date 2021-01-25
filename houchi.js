@@ -21,6 +21,12 @@ var app = new Vue({
                     } else if (this.shiro == '4'){
                         document.frm1['num2'].value = 2;
                         document.frm1['num3'].value = 2;
+                    } else if (this.shiro == '5'){
+                        document.frm1['num2'].value = 3;
+                        document.frm1['num3'].value = 1.5;
+                    }else if (this.shiro == '6'){
+                        document.frm1['num2'].value = 3;
+                        document.frm1['num3'].value = 2;
                     }
                     calc_sum();
                     

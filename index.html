@@ -12,6 +12,7 @@
 </head>
 
 <body>
+<div class ="background">
 <form name="frm1" action="dummy" class="exp01">
 <div id ="app">
 <div class="msr_text_05">
@@ -24,12 +25,17 @@
 <label for="kei1"><font color="red">赤城</font></label>
 <input type="radio" name="shiro" id="kei2" value="2" v-model="shiro"> 
 <label for="kei2">青城</label>
+<input type="radio" name="shiro" id="kei3" value="5" v-model="shiro"> 
+<label for="kei3"><font color="#FFD700">金城</font></label>
 <br/>
 <label><b><font color="#FFB000" size="3"> 群雄：</font></b></label>
 <input type="radio" name="shiro" id="gun1" value="3" v-model="shiro"> 
 <label for="gun1"><font color="red">赤城</font></label>
 <input type="radio" name="shiro" id="gun2" value="4" v-model="shiro"> 
-<label for="gun2" >青城</font></label>
+<label for="gun2" >青城</label>
+<input type="radio" name="shiro" id="gun3" value="6" v-model="shiro"> 
+<label for="gun3" ><font color="#FFD700">金城</font></label>
+
 </div>
 
   <div class="msr_pulldown_05">
@@ -38,6 +44,8 @@
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
     </select>
     <label>係数</label>
     <select name="num3">
@@ -75,7 +83,6 @@
 <!--分表示 -->
 <div class="msr_text_05">
 <label>■Step3-1.守れる時間</label>
-<label>分表示</label>
 <input size="6" type="text" name="result1" readonly>
 </div>
 
@@ -95,6 +102,6 @@
 </form>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script type="text/javascript" src="./houchi.js" charset="utf-8"></script>
-
+</div>
 </body>
 </html>

@@ -82,6 +82,7 @@
 }
 .msr_radio_05 input[type=radio] + label::before {
   border: 1px solid #777777;
+  font-size: 12px;
   border-radius: 50%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -96,7 +97,8 @@
   width: 16px;
 }
 .msr_radio_05 input[type=radio]:checked + label::after {
-  background: #333333;
+  background: #FFFFFF;
+  font-size: 12px;
   border-radius: 50%;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -177,12 +179,14 @@
   padding-bottom: 5px;
   position: relative;
   width: 100px;
+  font-size: 12px;
 }
 .msr_pulldown_05 p {
   font-size: 12px;
   padding-bottom: 5px;
 }
 .msr_pulldown_05 select {
+  font-size: 12px;
   appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -309,7 +313,7 @@
 背景
 ---------------------------------------*/
 body {
-  background-image: url("oichi.jpg");
+  background-image: url("oichi.png");
   background-size:contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
