@@ -53,6 +53,12 @@
   font-size: 12px;
 }
 
+.msr_text_08 label {
+  display: block;
+  color: #008000;
+  font-weight:  bold;
+  font-size: 12px;
+}
 /*--------------------------------------
 ラジオボタン
 ---------------------------------------*/
@@ -205,7 +211,7 @@
 }
 .msr_pulldown_05 label{
   font-size: 12px;
-  color: #99FFFF;
+  color: #008000;
   position:relative;
   font-weight:  bold;
 }
