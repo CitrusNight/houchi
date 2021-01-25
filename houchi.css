@@ -310,7 +310,7 @@
 ---------------------------------------*/
 body {
   background-image: url("oichi.jpg");
-  background-size: cover;
+  background-size:contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
   box-sizing : border-box;
