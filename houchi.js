@@ -64,9 +64,9 @@ function calc_sum(){
   // 係数
   var num3 = document.frm1['num3'].value;
   
-  if(min2 && sec2){
+  if(min2 + sec2){
 	  if(min2+sec2 != 0 && num2 != '' && num3 != ''){
- 		 document.frm1['onigiriCNT'].value = Math.round(((min2*60)+sec) * num2 / num3) ;
+ 		 document.frm1['onigiriCNT'].value = (min2*60 +sec) * num2 / num3 ;
 		} else {
 			document.frm1['onigiriCNT'].value = "";
 		}
