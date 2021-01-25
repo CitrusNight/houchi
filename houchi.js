@@ -72,7 +72,7 @@ function calc_sum(){
   
   if(min2 + sec2){
 	  if(min2+sec2 != 0 && num2 != '' && num3 != ''){
- 		 document.frm1['onigiriCNT'].value = (min2*60 +sec) * num2 / num3 ;
+ 		 document.frm1['onigiriCNT'].value = (min2*60 +sec2) * num2 / num3 ;
 		} else {
 			document.frm1['onigiriCNT'].value = "";
 		}
