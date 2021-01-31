@@ -11,12 +11,14 @@
     <meta name="viewport" content="width=320,height=480,initial-scale=1.0,minimum-scale=1.0,maximum-scale=2.0,user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="./houchi.css">
+    <script data-ad-client="ca-pub-2475530262277466" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <body>
+<div class ="background">
 <form name="frm1" action="dummy" class="exp01">
 <div id ="app">
-<div class="msr_text_05">
+<div class="msr_text_08">
 <label>■Step1.守りたい城を選択してください。</label>
 </div>
 
@@ -26,7 +28,7 @@
 <label for="kei1"><font color="red">赤城</font></label>
 <input type="radio" name="shiro" id="kei2" value="2" v-model="shiro"> 
 <label for="kei2">青城</label>
-input type="radio" name="shiro" id="kei2" value="5" v-model="shiro"> 
+<input type="radio" name="shiro" id="kei3" value="5" v-model="shiro"> 
 <label for="kei3"><font color="#FFD700">金城</font></label>
 <br/>
 <label><b><font color="#FFB000" size="3"> 群雄：</font></b></label>
@@ -78,13 +80,15 @@ input type="radio" name="shiro" id="kei2" value="5" v-model="shiro">
 -->
 
 <div class= "msr_sendbtn_05">
+<div class="msr_text_08	">
+<label>■Step3.ボタンをクリック！</label>
+</div>
 <input type="button" value="計算" onclick="calc_sum()">
 </div>
 
 <!--分表示 -->
 <div class="msr_text_05">
-<label>■Step3-1.守れる時間</label>
-<label>分表示</label>
+<label>■Result1.守れる時間</label>
 <input size="6" type="text" name="result1" readonly>
 </div>
 
@@ -96,7 +100,7 @@ input type="radio" name="shiro" id="kei2" value="5" v-model="shiro">
 -->
 
 <div class="msr_text_06">
-<label>■Step3-2.必要おにぎり数</label>
+<label>■Result2.必要おにぎり数</label>
 <input size="6" type="text" name="onigiriCNT" readonly>
 </div>
 
@@ -104,6 +108,6 @@ input type="radio" name="shiro" id="kei2" value="5" v-model="shiro">
 </form>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script type="text/javascript" src="./houchi.js" charset="utf-8"></script>
-
+</div>
 </body>
 </html>
