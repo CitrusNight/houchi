@@ -324,6 +324,7 @@ html {
 背景
 ---------------------------------------*/
 body {
+  overflow: auto;
   background-image: url("oichi.png");
   background-size:contain;
   background-repeat: no-repeat;
