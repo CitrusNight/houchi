@@ -17,16 +17,16 @@ var app = new Vue({
                         document.frm1['num3'].value = 1.5;
                     } else if (this.shiro == '3'){
                         document.frm1['num2'].value = 1;
-                        document.frm1['num3'].value = 2;
+                        document.frm1['num3'].value = 1.5;
                     } else if (this.shiro == '4'){
                         document.frm1['num2'].value = 2;
-                        document.frm1['num3'].value = 2;
+                        document.frm1['num3'].value = 1.5;
                     } else if (this.shiro == '5'){
                         document.frm1['num2'].value = 3;
                         document.frm1['num3'].value = 1.5;
                     }else if (this.shiro == '6'){
                         document.frm1['num2'].value = 3;
-                        document.frm1['num3'].value = 2;
+                        document.frm1['num3'].value = 1.5;
                     }
                     calc_sum();
                     
